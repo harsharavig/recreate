@@ -26,12 +26,6 @@
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://images.pexels.com" crossorigin>
     
-    <!-- Preconnect to Voiceflow for better performance -->
-    <link rel="dns-prefetch" href="//cdn.voiceflow.com">
-    <link rel="dns-prefetch" href="//general-runtime.voiceflow.com">
-    <link rel="preconnect" href="https://cdn.voiceflow.com" crossorigin>
-    <link rel="preconnect" href="https://general-runtime.voiceflow.com" crossorigin>
-    
     <!-- Critical CSS inlined for faster rendering -->
     <style>
       /* Critical above-the-fold styles */
@@ -77,11 +71,6 @@
         0% { background-position: 200% 0; }
         100% { background-position: -200% 0; }
       }
-      
-      /* Voiceflow Widget Fixes */
-      #voiceflow-chat {
-        z-index: 9999 !important;
-      }
     </style>
     
     <!-- Google tag (gtag.js) - Async loading for better performance -->
@@ -100,32 +89,9 @@
         document.head.appendChild(script);
       })();
     </script>
-    
-    <!-- Voiceflow AI Agent Widget -->
-    <script type="text/javascript">
-      (function(d, t) {
-          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-          v.onload = function() {
-            window.voiceflow.chat.load({
-              verify: { projectID: '685afee677e0a0eada11c3d9' },
-              url: 'https://general-runtime.voiceflow.com',
-              versionID: 'production',
-              voice: {
-                url: "https://runtime-api.voiceflow.com"
-              }
-            });
-          }
-          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-      })(document, 'script');
-    </script>
-    <script type="module" crossorigin src="/assets/index-DkyWHF8O.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-CRb3ZNvc.js">
-    <link rel="modulepreload" crossorigin href="/assets/supabase-bNDkVZ62.js">
-    <link rel="modulepreload" crossorigin href="/assets/router-BGDdRcgm.js">
-    <link rel="modulepreload" crossorigin href="/assets/utils-j4oi1-vl.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-BI0q-D24.css">
   </head>
   <body class="bg-gray-50 text-gray-900">
     <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
