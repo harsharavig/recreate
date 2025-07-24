@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/NMW3-logo.png" sizes="128x128" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NMW3 | AI Systems for Local Businesses</title>
+    <meta name="description" content="Get more sales and appointments with NMW3.AI, the 24/7 AI Web Agent for home service businesses.">
+    
+    <!-- Critical performance optimizations -->
+    <meta name="theme-color" content="#050505">
+    <meta name="color-scheme" content="dark">
+    
+    <!-- Preload critical fonts for performance -->
+    <link rel="preload" href="/assets/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/Satoshi-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="/assets/NMW3-logo.png" as="image" type="image/png">
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//images.pexels.com">
+    
+    <!-- Resource hints for better performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://images.pexels.com" crossorigin>
+    
+    <!-- Preconnect to Voiceflow for better performance -->
+    <link rel="dns-prefetch" href="//cdn.voiceflow.com">
+    <link rel="dns-prefetch" href="//general-runtime.voiceflow.com">
+    <link rel="preconnect" href="https://cdn.voiceflow.com" crossorigin>
+    <link rel="preconnect" href="https://general-runtime.voiceflow.com" crossorigin>
+    
+    <!-- Critical CSS inlined for faster rendering -->
+    <style>
+      /* Critical above-the-fold styles */
+      html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: hidden;
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #050505;
+        color: #ffffff;
+        font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      #root {
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      
+      /* Loading state optimization */
+      .loading-skeleton {
+        background: linear-gradient(90deg, #111111 25%, #1a1a1a 50%, #111111 75%);
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+      }
+      
+      @keyframes loading {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+      }
+      
+      /* Voiceflow Widget Fixes */
+      #voiceflow-chat {
+        z-index: 9999 !important;
+      }
+    </style>
+    
+    <!-- Google tag (gtag.js) - Async loading for better performance -->
+    <script>
+      // Defer Google Analytics to not block rendering
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4DWB5BHHGY');
+      
+      // Load GA script asynchronously
+      (function() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-4DWB5BHHGY';
+        document.head.appendChild(script);
+      })();
+    </script>
+    
+    <!-- Voiceflow AI Agent Widget -->
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '685afee677e0a0eada11c3d9' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production',
+              voice: {
+                url: "https://runtime-api.voiceflow.com"
+              }
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+    <script type="module" crossorigin src="/assets/index-DkyWHF8O.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-CRb3ZNvc.js">
+    <link rel="modulepreload" crossorigin href="/assets/supabase-bNDkVZ62.js">
+    <link rel="modulepreload" crossorigin href="/assets/router-BGDdRcgm.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-j4oi1-vl.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BI0q-D24.css">
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <div id="root"></div>
+  </body>
+</html>

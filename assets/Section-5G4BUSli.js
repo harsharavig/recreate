@@ -1,0 +1,1 @@
+import{j as s}from"./index-DkyWHF8O.js";const e=({children:e,className:i="",id:a})=>s.jsx("section",{id:a,className:`py-16 md:py-24 ${i}`,children:s.jsx("div",{className:"container",children:e})});export{e as S};
